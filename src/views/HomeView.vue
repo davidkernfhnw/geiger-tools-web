@@ -15,7 +15,11 @@
       Some quick example text to build on the card title and make up the bulk of the card's content.
     </b-card-text>
     <b-button variant="primary" >Go somewhere</b-button>
+
         <a href="https://davidkernfhnw.github.io/geiger-tools-web/downloads/GEIGER-Toolbox.apk" target="_blank" >Download</a>
+                <a href="https://github.com/davidkernfhnw/geiger-downloads/raw/main/android/GEIGER-Toolbox.apk" target="_blank" >Download external</a>
+
+        
 
 
   </b-card>
