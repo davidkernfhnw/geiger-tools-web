@@ -1,38 +1,104 @@
 <template>
   <div class="home">
-    <b-img alt="Geiger-logo" src="../assets/logo.png" fluid width="200px" ></b-img>
-    <div>
-  <b-card
-    title="Tool Title"
-    img-src="@/assets/tool-example.png"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 16rem;"
-    class="mx-auto"
-  >
-    <b-card-text>
-      Some quick example text to build on the card title and make up the bulk of the card's content.
-    </b-card-text>
-    <b-button variant="primary" >Go somewhere</b-button>
+    <b-container fluid="sm">
+      <b-img
+        class="mb-4"
+        alt="Geiger-logo"
+        src="../assets/logo.png"
+        fluid
+        width="400rem"
+      ></b-img>
 
-        <a href="https://davidkernfhnw.github.io/geiger-tools-web/downloads/GEIGER-Toolbox.apk" target="_blank" >Download</a>
-                <a href="https://github.com/davidkernfhnw/geiger-downloads/raw/main/android/GEIGER-Toolbox.apk" target="_blank" >Download external</a>
+      <b-card
+        v-b-toggle="'collapse-' + i"
+        v-for="(n, i) in tools.length"
+        :key="i"
+        class="mb-3 mx-auto br5"
+        style="max-width: 700px"
+      >
+        <b-row align-h="start" class="m-1">
+          <b-col cols="3" class="px-0">
+            <b-img src="@/assets/tool-example.png" fluid class="br5"></b-img>
+          </b-col>
+          <b-col cols="9" align-self="center" class="px-0">
+            <b-card-title class="mb-0">
+              Tool Title
+              <mdicon v-if="tools[i].android" name="android" class="mx-1" />
+              <mdicon v-if="tools[i].microsoft" name="microsoft" class="mx-1" />
+              <mdicon v-if="tools[i].apple" name="apple" class="mx-1" />
+              <mdicon v-if="tools[i].linux" name="linux" class="mx-1" />
+            </b-card-title>
+          </b-col>
+        </b-row>
+        <b-collapse :id="'collapse-' + i" fluid class="mt-2">
+          <b-tabs align="center">
 
-        
+                        <InstructionStepsAndroid v-if="tools[i].android" :download_link="tools[i].download_url_android" />
+                        <InstructionStepsAndroid v-if="tools[i].microsoft" />
 
 
-  </b-card>
-</div>
+          </b-tabs>
+        </b-collapse>
+      </b-card>
+    </b-container>
+    <a
+      href="https://davidkernfhnw.github.io/geiger-tools-web/downloads/GEIGER-Toolbox.apk"
+      target="_blank"
+      >Download</a
+    >
+    <a
+      href="https://github.com/davidkernfhnw/geiger-downloads/raw/main/android/GEIGER-Toolbox.apk"
+      target="_blank"
+      >Download external</a
+    >
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
+import InstructionStepsAndroid from "@/components/InstructionStepsAndroid.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
-  }
-}
+    InstructionStepsAndroid,
+  },
+  data: () => ({
+    tools: [
+      {name: "GEIGER Toolbox", 
+      desc: "",
+      android: true, 
+      download_url_android: "https://davidkernfhnw.github.io/geiger-tools-web/downloads/android/GEIGER-Toolbox.apk",
+      microsoft: false,
+      download_url_microsoft: "",
+      apple: false,
+      download_url_apple: "",
+      linux: false,
+      download_url_linux: "" },
+
+      {name: "Chatbot", 
+      desc: "", 
+      android: true,
+      download_url_android: "https://davidkernfhnw.github.io/geiger-tools-web/downloads/android/mi-cyberrange.apk",
+      microsoft: true,
+      download_url_microsoft: "https://davidkernfhnw.github.io/geiger-tools-web/downloads/microsoft/mi_cyberrange.exe",
+      apple: false,
+      download_url_apple: "",
+      linux: false,
+      download_url_linux: "" },
+    ],
+  }),
+  methods: {
+  
+  },
+};
 </script>
+
+<style scoped>
+.card-body {
+  padding: 0;
+}
+.br5 {
+  border-radius: 5px;
+}
+</style>

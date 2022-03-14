@@ -5,7 +5,12 @@ import './plugins/bootstrap-vue'
 import App from './App.vue'
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import mdiVue from 'mdi-vue/v2'
+import * as mdijs from '@mdi/js'
 
+Vue.use(mdiVue, {
+  icons: mdijs
+}) 
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'

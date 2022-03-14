@@ -17,6 +17,9 @@
   color:black;
   background-color: #F8F8F8;
 }
+:root{
+    background-color: #F8F8F8;
+}
 
 nav {
   padding: 30px;
