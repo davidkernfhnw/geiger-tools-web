@@ -101,10 +101,10 @@ export default {
         img: "",
         android: true,
         download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-cyberrange.apk",
+          'https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-cyberrange.apk',
         microsoft: true,
         download_url_microsoft:
-          "https://davidkernfhnw.github.io/geiger-tools-web/raw/downloads/microsoft/mi_cyberrange.exe",
+          'https://davidkernfhnw.github.io/geiger-tools-web/raw/downloads/microsoft/mi_cyberrange.exe',
         apple: false,
         download_url_apple: "",
         linux: false,
@@ -118,7 +118,7 @@ export default {
         img: "",
         android: true,
         download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk.apk",
+          'https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk.apk',
         microsoft: false,
         download_url_microsoft: "",
         apple: false,
