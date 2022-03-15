@@ -31,15 +31,15 @@
         </b-row>
         <b-button
           block
+          style="background-color: #1FCD54; border-color: #1FCD54"
           v-bind:hidden="!tools[i].btnShow"
-          variant="primary"
           class="border-radius-bottom"
           v-b-toggle="'collapse-' + i"
           @click="tools[i].btnShow = !tools[i].btnShow"
           >Get Tool</b-button
         >
         <b-collapse :id="'collapse-' + i" fluid class="mt-2">
-          <b-tabs align="center">
+          <b-tabs align="center" pills>
             <InstructionStepsAndroid
               v-if="tools[i].android"
               :name="tools[i].name"
@@ -48,12 +48,13 @@
             />
             <InstructionStepsWindows
               v-if="tools[i].microsoft"
+              :name="tools[i].name"
               :download_url="tools[i].download_url_windows"
             />
           </b-tabs>
           <b-button 
           block 
-          variant="primary"
+          variant="secondary"
           class="border-radius-bottom"
           v-b-toggle="'collapse-' + i"
           @click="tools[i].btnShow = !tools[i].btnShow"

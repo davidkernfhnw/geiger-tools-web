@@ -1,67 +1,81 @@
 <template>
-  <b-tab title="Android">
-    <b-list-group>
-      <b-list-group-item>
-        <div class="circle mx-auto mb-3">1</div>
-        <b-button variant="success" class="mx-auto" v-bind:href="download_url" target="_blank">Download {{name}}</b-button>
-      </b-list-group-item>
-      <b-list-group-item>
-        <hr>
-        <div class="circle mx-auto mb-3">2</div>
-        <h5 class="mx-auto mt-3"><b>2.1</b></h5>
-        <body class="text-center">
-          Now tap on <b>Open</b> after the download process is complete.
-        </body>
-        <h5 class="mx-auto mt-3"><b>2.2</b></h5>
-        <body class="text-center">
-          Tap the <b>"Install"</b> Button to install the APK
-        </body>
-        <body class="text-center">
-          <h5 class="mx-auto mt-3"><b>(2.3)</b></h5>
-          If "Installation not allowed" is shown, tap on Settings and toggle
-          "Allow from this source". Repeat the steps from <b>2.1.</b> 
-        </body>
-      </b-list-group-item>
-      <b-list-group-item>
-        <hr>
-        <div class="circle mx-auto mb-3">3</div>
-        <b-img src="@/assets/applause.png" width="100px"></b-img>
-        <h5 class="text-center mt-3">
-          Successfully installed!
-        </h5>
-        <body>
-        </body>
-      </b-list-group-item>
-    </b-list-group>
+  <b-tab>
+    <template slot="title">
+      <mdicon name="android" class="mx-1" />
+      <h6>Android</h6>
+    </template>
+    <hr>
+    <div class="circle mx-auto my-4">1</div>
+     <body class="mx-auto my-3 text-center bg-body" >
+      Click the download button.
+      <b-button
+      style="background-color: #3cd881; border: none; "
+      class="mx-auto my-3 shadow"
+      v-bind:href="download_url"
+      target="_blank"
+      >      <mdicon name="android" class="mx-1" />
+ {{ name }}</b-button
+    >
+    </body>
+    
+    <body class="mx-auto mt-3 text-center bg-body" >
+      Click <b>"Download anyway"</b>
+          <b-img src="@/assets/android_instructions/warning-harmfull.jpg" fluid class="img-size mx-auto"></b-img>
+
+    </body>
+    <p class="ml-3 mr-3 mt-3 text-warning"><small>
+      A warning may appear in your browser that this file could be harmful. 
+      This message appears because you download the app file directly from this website instead from the Google Play Store. <br><b class="text-secondary">Don't worry, we won't install any malicious files on your device!</b>
+    </small></p>
+    <hr />
+
+    <div class="circle mx-auto my-4">2</div>
+      <body class="mx-auto mt-3 text-center bg-body" >
+      After download has finished click <b>"Open"</b>  
+      <b-img src="@/assets/android_instructions/open-snackbar.jpg" fluid class="img-size mx-auto"></b-img>
+    </body>
+    
+      <body class="mx-auto mt-5 text-center bg-body" >
+      If "...not allowed to install unknown apps.." is shown, click on <b>"Settings"</b>. Otherwise got to section <div class="circle-small ml-1">3</div>
+      <b-img src="@/assets/android_instructions/not-allowed-snackbar.jpg" fluid class="img-size"></b-img>
+    </body>
+
+     <body class="mx-auto mt-5 text-center bg-body" >
+      Toggle <b> "Allow apps from this source"</b> and return to the previous screen.
+      <br>
+      <b-img src="@/assets/android_instructions/allow-unknown-source.jpg" fluid class="img-size mx-auto"></b-img>
+    </body>
+    <hr />
+    <div class="circle mx-auto my-3">3</div>
+       <body class="mx-auto mt-3 text-center bg-body" >
+      Click <b>"Install"</b>
+      <br>
+      <b-img src="@/assets/android_instructions/install-snackbar.jpg" fluid class="img-size mx-auto"></b-img>
+    </body>
+    <b-img src="@/assets/applause.png" width="100px" class="mt-3"></b-img>
+    <h5 class="text-center mt-3">Successfully installed!</h5>
+    <body></body>
   </b-tab>
 </template>
 
 <script>
-
 export default {
   name: "InstructionStepsAndroid",
-  components: {
-  },
+  components: {},
   props: {
     download_url: String,
-    name: String
+    name: String,
   },
 
   data: () => ({}),
 };
 </script>
 
-<style>
-
+<style scoped>
 .circle {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  padding: 10px;
-  background: rgb(255, 255, 255);
-  border: 2px solid rgb(45, 155, 51);
-  color: rgb(45, 155, 51);
-  text-align: center;
-  font: 30px Arial, sans-serif;
+  border: 2px solid #3cd881;
+  color: #3cd881;
 }
+
+
 </style>
