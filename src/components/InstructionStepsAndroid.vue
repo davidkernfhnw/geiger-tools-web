@@ -10,7 +10,7 @@
         <div class="circle mx-auto mb-3">2</div>
         <h5 class="mx-auto mt-3"><b>2.1</b></h5>
         <body class="text-center">
-          Open the downloaded APK File
+          Now tap on <b>Open</b> after the download process is complete.
         </body>
         <h5 class="mx-auto mt-3"><b>2.2</b></h5>
         <body class="text-center">
