@@ -3,7 +3,7 @@
     <b-list-group>
       <b-list-group-item>
         <div class="circle mx-auto mb-3">1</div>
-        <b-button variant="success" class="mx-auto" :href="download_url" target="_blank">Download {{name}}</b-button>
+        <b-button variant="success" class="mx-auto" v-bind:href="download_url" target="_blank">Download {{name}}</b-button>
       </b-list-group-item>
       <b-list-group-item>
         <hr>
@@ -37,8 +37,11 @@
 </template>
 
 <script>
+
 export default {
   name: "InstructionStepsAndroid",
+  components: {
+  },
   props: {
     download_url: String,
     name: String

@@ -4,7 +4,7 @@
       <b-img
         class="mb-4"
         alt="Geiger-logo"
-        src="../assets/logo.png"
+        src="@/assets/logo.png"
         fluid
         width="400rem"
       ></b-img>
@@ -43,12 +43,12 @@
             <InstructionStepsAndroid
               v-if="tools[i].android"
               :name="tools[i].name"
-              :download_link="tools[i].download_url_android"
+              :download_url="tools[i].download_url_android"
               
             />
             <InstructionStepsWindows
               v-if="tools[i].microsoft"
-              :download_link="tools[i].download_url_windows"
+              :download_url="tools[i].download_url_windows"
             />
           </b-tabs>
           <b-button 
@@ -85,7 +85,7 @@ export default {
         img: "",
         android: true,
         download_url_android:
-          "https://davidkernfhnw.github.io/geiger-tools-web/raw/downloads/android/GEIGER-Toolbox.apk",
+          'https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/GEIGER-Toolbox.apk',
         microsoft: false,
         download_url_microsoft: "",
         apple: false,
