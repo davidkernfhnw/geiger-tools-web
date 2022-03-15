@@ -1,79 +1,64 @@
 <template>
-      <b-tab title="Android">
-        <b-button :href="download_link" >Download APK</b-button>
-      
-      </b-tab>
- 
- <!-- <v-container fluid class="d-flex justify-center">
-    <div class="d-flex flex-column">
-      <v-card class="d-flex flex-row mb-6 pa-4" flat color="white" tile>
-        <div class="pr-8 d-flex align-center">
-          <h1>1.</h1>
-        </div>
-        <div></div>
-        <div class="d-flex align-center">
-          <v-btn color="green" class="white--text" 
-            >Download APK<v-icon class="ml-3">mdi-android</v-icon>
-          </v-btn>
-          <a href="https://docs.google.com/uc?export=download&id=1cXWbwONh7JROY2bqJH5O6ZD8NV3WdiGX" download="geiger" target="_blank">download</a>
- 
-        </div>
-      </v-card>
-      <v-divider class="my-5 divider"></v-divider>
-      <v-card class="d-flex flex-row mb-6 pa-4" flat color="white" tile>
-        <div class="pr-8 d-flex align-center">
-          <h1>2.</h1>
-        </div>
-        <div class="d-flex align-center">
-          <div class="d-flex flex-column">
-            <v-list-item class="pa-0">
-              <v-list-item-content>
-                <v-list-item-title>
-                  <body class="pa-0"><b>1.</b> Open the downloaded APK File</body>
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-            <v-list-item class="pa-0">
-              <v-list-item-content>
-                <v-list-item-title>
-                  <body class="pa-0"><b>2.</b> Tap the <b>"Install"</b> Button to install the APK</body>
-                </v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </div>
-        </div>
-      </v-card>
-      <v-divider class="my-5 divider"></v-divider>
-      <v-card class="d-flex flex-row mb-6 pa-4" flat color="white" tile>
-        <div class="pr-4 d-flex align-center">
-          <h1>3.</h1>
-        </div>
-        <div class="d-flex align-center">
-          <div class="d-flex flex-column"></div>
-          <body>
-              If necessary: <b>Enable the "Unknown Sources"</b> setting on your Android device if needed.
-          </body>
-        </div>
-      </v-card>
-    </div>
-  </v-container> -->
+  <b-tab title="Android">
+    <b-list-group>
+      <b-list-group-item>
+        <div class="circle mx-auto mb-3">1</div>
+        <b-button variant="success" class="mx-auto" :href="download_url" target="_blank">Download {{name}}</b-button>
+      </b-list-group-item>
+      <b-list-group-item>
+        <hr>
+        <div class="circle mx-auto mb-3">2</div>
+        <h5 class="mx-auto mt-3"><b>2.1</b></h5>
+        <body class="text-center">
+          Open the downloaded APK File
+        </body>
+        <h5 class="mx-auto mt-3"><b>2.2</b></h5>
+        <body class="text-center">
+          Tap the <b>"Install"</b> Button to install the APK
+        </body>
+        <body class="text-center">
+          <h5 class="mx-auto mt-3"><b>(2.3)</b></h5>
+          If "Installation not allowed" is shown, tap on Settings and toggle
+          "Allow from this source". Repeat the steps from <b>2.1.</b> 
+        </body>
+      </b-list-group-item>
+      <b-list-group-item>
+        <hr>
+        <div class="circle mx-auto mb-3">3</div>
+        <b-img src="@/assets/applause.png" width="100px"></b-img>
+        <h5 class="text-center mt-3">
+          Successfully installed!
+        </h5>
+        <body>
+        </body>
+      </b-list-group-item>
+    </b-list-group>
+  </b-tab>
 </template>
 
 <script>
 export default {
-  name: "InstructionSteps",
+  name: "InstructionStepsAndroid",
   props: {
-    download_link: String,
+    download_url: String,
+    name: String
   },
 
-  data: () => ({
-  }),
+  data: () => ({}),
 };
-
 </script>
 
 <style>
-.divider {
-  width: 100vw;
+
+.circle {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(45, 155, 51);
+  color: rgb(45, 155, 51);
+  text-align: center;
+  font: 30px Arial, sans-serif;
 }
 </style>
