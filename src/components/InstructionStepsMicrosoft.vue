@@ -1,5 +1,5 @@
 <template>
-  <b-tab>
+  <b-tab active>
     <template slot="title">
       <mdicon name="microsoft" class="mx-1" />
       <h6>Microsoft</h6>
@@ -7,81 +7,86 @@
     <hr />
     <div class="circle mx-auto my-4">1</div>
     <body class="mx-auto my-3 text-center bg-body">
-      Click the download button.
+      Click the download button below. <br />
       <b-button
-        class="mx-auto my-3 win-btn shadow"
+        class="mx-auto my-3 win-btn"
         v-bind:href="download_url"
         target="_blank"
       >
         <mdicon name="microsoft" class="mx-1" /> {{ name }}</b-button
       >
     </body>
-
+    <hr>
+      <div class="circle mx-auto my-4">2</div>
+          <body class="mx-auto mt-3 text-center bg-body">
+            Open the file after the download has finished.
+            <b-img
+        src="@/assets/microsoft_instructions/download-snackbar.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
+      ></b-img>
+          </body>
     <body class="mx-auto mt-3 text-center bg-body">
-      Click <b>"Download anyway"</b>
+      Click on <b>"More info"</b> <br />
       <b-img
-        src="@/assets/android_instructions/warning-harmfull.jpg"
-        fluid
-        class="img-size mx-auto"
+        src="@/assets/microsoft_instructions/warning-protect.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
       ></b-img>
     </body>
-    <p class="ml-3 mr-3 mt-3 text-warning">
+    <p class="mt-1 text-warning " style="margin-left: 25px; margin-right: 25px">
       <small>
-        A warning may appear in your browser that this file could be harmful.
-        This message appears because you download the app file directly from
-        this website instead from the Google Play Store. <br /><b
+        This warning appears because you download the app file directly from
+        this website instead from the the official Microsoft Store. <br /><b
           class="text-secondary"
           >Don't worry, we won't install any malicious files on your device!</b
         >
       </small>
     </p>
+     <body class="mx-auto mt-5 text-center bg-body">
+      Click on <b>"Run anyway"</b> <br />
+      <b-img
+        src="@/assets/microsoft_instructions/run-anyway.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
+      ></b-img>
+    </body>
     <hr />
 
-    <div class="circle mx-auto my-4">2</div>
+    <div class="circle mx-auto my-4">3</div>
     <body class="mx-auto mt-3 text-center bg-body">
-      After download has finished click <b>"Open"</b>
+      Select Destination Location (default location is fine) and click <b>"Next"</b> <br />
       <b-img
-        src="@/assets/android_instructions/open-snackbar.jpg"
-        fluid
-        class="img-size mx-auto"
+        src="@/assets/microsoft_instructions/set-destination.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
       ></b-img>
     </body>
 
     <body class="mx-auto mt-5 text-center bg-body">
-      If "...not allowed to install unknown apps.." is shown, click on
-      <b>"Settings"</b>. Otherwise got to section
-      <div class="circle-small ml-1">3</div>
-      <b-img
-        src="@/assets/android_instructions/not-allowed-snackbar.jpg"
-        fluid
-        class="img-size"
-      ></b-img>
-    </body>
-
-    <body class="mx-auto mt-5 text-center bg-body">
-      Toggle <b> "Allow apps from this source"</b> and return to the previous
-      screen.
+      Create a desktop shortcut if you want and click on <b>"Next"</b>.
+  
       <br />
       <b-img
-        src="@/assets/android_instructions/allow-unknown-source.jpg"
-        fluid
-        class="img-size mx-auto"
+        src="@/assets/microsoft_instructions/additional-tasks.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
       ></b-img>
     </body>
-    <hr />
+    <hr>
     <div class="circle mx-auto my-3">3</div>
-    <body class="mx-auto mt-3 text-center bg-body">
-      Click <b>"Install"</b>
-      <br />
+    <body class="mx-auto mt-5 text-center bg-body">
+      Click on <b> "Install"</b><br />
       <b-img
-        src="@/assets/android_instructions/install-snackbar.jpg"
-        fluid
-        class="img-size mx-auto"
+        src="@/assets/microsoft_instructions/install-app.jpg"
+        fluid-grow
+        class="img-size mx-auto shadow"
       ></b-img>
     </body>
+    <hr />
+    
     <b-img src="@/assets/applause.png" width="100px" class="mt-3"></b-img>
     <h5 class="text-center mt-3">Successfully installed!</h5>
-    <body></body>
   </b-tab>
 </template>
 
@@ -98,18 +103,41 @@ export default {
 </script>
 
 <style scoped>
+.win-btn {
+  background-color: #01abeb;
+  border: none;
+}
+.img-size {
+  margin-top: 20px;
+  max-width: 400px;
+  min-width: 120px;
+  border-radius: 2px;
+}
+.bg-body {
+  background-color: #f3f3f3;
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: 90%;
+}
 .circle {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 10px;
   border: 2px solid #01abeb;
   color: #01abeb;
+  text-align: center;
+  font: 30px Arial, sans-serif;
 }
 .circle-small {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
   border: 2px solid #01abeb;
   color: #01abeb;
+  text-align: center;
+  font: 15px Arial, sans-serif;
+  display: inline-block;
 }
-.win-btn {
-  background-color: #01abeb; 
-  border: none
-}
-
-
 </style>
