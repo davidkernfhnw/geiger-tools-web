@@ -2,7 +2,8 @@
   <div id="app">
     <nav>
       <router-link to="/">Tools</router-link> |
-      <router-link to="/help">Get Help</router-link>
+      <router-link to="/instructions">Insructions</router-link> |
+      <router-link to="/help">Get Help</router-link> 
     </nav>
     <router-view />
     <BottomFooter />

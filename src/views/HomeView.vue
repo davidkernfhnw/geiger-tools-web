@@ -136,7 +136,7 @@ export default {
         logo: "default-logo.png",
         android: true,
         download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk.apk",
+          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk",
         microsoft: false,
         download_url_microsoft: "",
         apple: false,
@@ -144,6 +144,21 @@ export default {
         linux: false,
         download_url_linux: "",
       },
+      {
+        btnShow: true,
+        name: "MI KSP Security",
+        desc: "",
+        logo: "default-logo.png",
+        android: true,
+        download_url_android:
+          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-ksp-security.apk",
+        microsoft: false,
+        download_url_microsoft: "",
+        apple: false,
+        download_url_apple: "",
+        linux: false,
+        download_url_linux: "",
+      }
     ],
   }),
   methods: {},
