@@ -92,7 +92,7 @@ export default {
         apple: false,
         download_url_apple: "",
         linux: false,
-        download_url_linux: "",
+        download_url_linux:"https://github.com/davidkernfhnw/geiger-tools-we",
       },
 
       {
