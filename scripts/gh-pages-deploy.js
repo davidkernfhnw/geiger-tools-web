@@ -5,7 +5,6 @@ const fs = require("fs");
   try {
     await execa("git", ["add", "."]);
     await execa("git", ["commit", "-m", "commit before deploying", "--allow-empty"]);
-    await execa("git", ["push"]);
     await execa("git", ["checkout", "--orphan", "gh-pages"]);
     // eslint-disable-next-line no-console
     console.log("Building started...");
