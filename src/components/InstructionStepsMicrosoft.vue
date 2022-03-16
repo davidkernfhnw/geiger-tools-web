@@ -9,8 +9,7 @@
     <body class="mx-auto my-3 text-center bg-body">
       Click the download button.
       <b-button
-      style="background-color: #01abeb; border: none "
-        class="mx-auto my-3 shadow"
+        class="mx-auto my-3 win-btn shadow"
         v-bind:href="download_url"
         target="_blank"
       >
@@ -91,7 +90,7 @@ export default {
   name: "InstructionStepsWindows",
   props: {
     name: String,
-    download_link: String,
+    download_url: String,
   },
 
   data: () => ({}),
@@ -107,4 +106,10 @@ export default {
   border: 2px solid #01abeb;
   color: #01abeb;
 }
+.win-btn {
+  background-color: #01abeb; 
+  border: none
+}
+
+
 </style>

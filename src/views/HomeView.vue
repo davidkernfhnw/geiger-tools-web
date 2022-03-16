@@ -49,7 +49,7 @@
             <InstructionStepsWindows
               v-if="tools[i].microsoft"
               :name="tools[i].name"
-              :download_url="tools[i].download_url_windows"
+              :download_url="tools[i].download_url_microsoft"
             />
           </b-tabs>
           <b-button 
@@ -105,7 +105,7 @@ export default {
           'https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-cyberrange.apk',
         microsoft: true,
         download_url_microsoft:
-          'https://davidkernfhnw.github.io/geiger-tools-web/raw/downloads/microsoft/mi_cyberrange.exe',
+          'https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads//microsoft/mi_cyberrange.exe',
         apple: false,
         download_url_apple: "",
         linux: false,

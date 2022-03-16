@@ -9,8 +9,8 @@
      <body class="mx-auto my-3 text-center bg-body" >
       Click the download button.
       <b-button
-      style="background-color: #3cd881; border: none; "
-      class="mx-auto my-3 shadow"
+      
+      class="mx-auto my-3 shadow android-btn"
       v-bind:href="download_url"
       target="_blank"
       >      <mdicon name="android" class="mx-1" />
@@ -75,6 +75,10 @@ export default {
 .circle {
   border: 2px solid #3cd881;
   color: #3cd881;
+}
+.android-btn {
+  background-color: #3cd881; 
+  border: none; 
 }
 
 
