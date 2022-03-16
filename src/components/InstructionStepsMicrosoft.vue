@@ -1,15 +1,15 @@
 <template>
-  <b-tab active>
+  <b-tab>
     <template slot="title">
       <mdicon name="microsoft" class="mx-1" />
       <h6>Microsoft</h6>
     </template>
     <hr />
     <div class="circle mx-auto my-4">1</div>
-    <body class="mx-auto my-3 text-center bg-body">
+    <body class="mx-auto my-3 py-4 text-center bg-body">
       Click the download button below. <br />
       <b-button
-        class="mx-auto my-3 win-btn"
+        class="mx-auto mt-3 win-btn"
         v-bind:href="download_url"
         target="_blank"
       >
@@ -18,15 +18,16 @@
     </body>
     <hr>
       <div class="circle mx-auto my-4">2</div>
-          <body class="mx-auto mt-3 text-center bg-body">
-            Open the file after the download has finished.
+          <body class="mx-auto mt-3 py-4 text-center bg-body">
+            Open the file after the download has finished. <br>
             <b-img
         src="@/assets/microsoft_instructions/download-snackbar.jpg"
         fluid-grow
+        style="max-width: 250px"
         class="img-size mx-auto shadow"
       ></b-img>
           </body>
-    <body class="mx-auto mt-3 text-center bg-body">
+    <body class="mx-auto mt-3 py-4 text-center bg-body">
       Click on <b>"More info"</b> <br />
       <b-img
         src="@/assets/microsoft_instructions/warning-protect.jpg"
@@ -43,7 +44,7 @@
         >
       </small>
     </p>
-     <body class="mx-auto mt-5 text-center bg-body">
+     <body class="mx-auto mt-5 py-4 text-center bg-body">
       Click on <b>"Run anyway"</b> <br />
       <b-img
         src="@/assets/microsoft_instructions/run-anyway.jpg"
@@ -54,7 +55,7 @@
     <hr />
 
     <div class="circle mx-auto my-4">3</div>
-    <body class="mx-auto mt-3 text-center bg-body">
+    <body class="mx-auto mt-3 py-4 text-center bg-body">
       Select Destination Location (default location is fine) and click <b>"Next"</b> <br />
       <b-img
         src="@/assets/microsoft_instructions/set-destination.jpg"
@@ -63,7 +64,7 @@
       ></b-img>
     </body>
 
-    <body class="mx-auto mt-5 text-center bg-body">
+    <body class="mx-auto mt-5 py-4 text-center bg-body">
       Create a desktop shortcut if you want and click on <b>"Next"</b>.
   
       <br />
@@ -75,16 +76,14 @@
     </body>
     <hr>
     <div class="circle mx-auto my-3">3</div>
-    <body class="mx-auto mt-5 text-center bg-body">
+    <body class="mx-auto mt-5 py-4 text-center bg-body">
       Click on <b> "Install"</b><br />
       <b-img
         src="@/assets/microsoft_instructions/install-app.jpg"
         fluid-grow
         class="img-size mx-auto shadow"
       ></b-img>
-    </body>
-    <hr />
-    
+    </body>    
     <b-img src="@/assets/applause.png" width="100px" class="mt-3"></b-img>
     <h5 class="text-center mt-3">Successfully installed!</h5>
   </b-tab>
@@ -114,8 +113,8 @@ export default {
   border-radius: 2px;
 }
 .bg-body {
-  background-color: #f3f3f3;
-  border-radius: 20px;
+  background-color: #f3f3f36b;
+  border-radius: 10px;
   padding: 10px 20px;
   width: 90%;
 }

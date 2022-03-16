@@ -2,11 +2,11 @@
   <div class="home">
     <b-container fluid="sm">
       <b-img
-        class="mb-4"
+        class="mt-3 mb-5"
         alt="Geiger-logo"
         src="@/assets/logo-custom.png"
         fluid
-        width="400rem"
+        width="300rem"
       ></b-img>
 
       <b-card
@@ -17,7 +17,7 @@
       >
         <b-row class="my-auto mx-3">
           <b-col cols="3" class="px-0 my-3">
-            <b-img src="@/assets/tool-example.png" fluid class="br5"></b-img>
+            <b-img :src="require('@/assets/logos/' + tools[i].logo + '' )" fluid class="br5" ></b-img>
           </b-col>
           <b-col cols="9" class="align-left">
             <b-card-title class="my-3">
@@ -88,7 +88,6 @@
 // @ is an alias to /src
 import InstructionStepsAndroid from "@/components/InstructionStepsAndroid.vue";
 import InstructionStepsWindows from "@/components/InstructionStepsMicrosoft.vue";
-
 export default {
   name: "HomeView",
   components: {
@@ -101,7 +100,7 @@ export default {
         btnShow: true,
         name: "GEIGER Toolbox",
         desc: "",
-        img: "",
+        logo: "toolbox-logo.png",
         android: true,
         download_url_android:
           "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/GEIGER-Toolbox.apk",
@@ -117,7 +116,7 @@ export default {
         btnShow: true,
         name: "MI Cyberrange",
         desc: "",
-        img: "",
+        logo: "default-logo.png",
         android: true,
         download_url_android:
           "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-cyberrange.apk",
@@ -134,7 +133,7 @@ export default {
         btnShow: true,
         name: "Chatbot",
         desc: "",
-        img: "",
+        logo: "default-logo.png",
         android: true,
         download_url_android:
           "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk.apk",
@@ -173,7 +172,7 @@ export default {
   color: rgb(59, 63, 61);
 }
 .card {
-  background-color: rgba(225, 252, 231, 0.274);
+  background-color: rgb(235, 235, 235);
 }
 .collapse {
   background-color: white;

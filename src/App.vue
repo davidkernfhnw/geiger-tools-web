@@ -1,12 +1,24 @@
 <template>
   <div id="app">
     <nav>
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/">Tools</router-link> |
+      <router-link to="/help">Get Help</router-link>
     </nav>
-    <router-view/>
+    <router-view />
+    <BottomFooter />
   </div>
+
 </template>
+
+<script>
+import BottomFooter from '@/components/BottomFooter.vue'
+
+export default {
+  components: {
+    BottomFooter
+  }
+}
+</script>
 
 
 <style> 
@@ -18,9 +30,6 @@
   text-align: center;
   color:black;
   background-color: #F8F8F8;
-}
-:root{
-    background-color: #F8F8F8;
 }
 
 nav {

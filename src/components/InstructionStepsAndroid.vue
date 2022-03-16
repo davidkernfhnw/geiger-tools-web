@@ -6,10 +6,10 @@
     </template>
     <hr />
     <div class="circle mx-auto my-4">1</div>
-    <body class="mx-auto my-3 text-center bg-body">
+    <body class="mx-auto my-3 py-4 text-center bg-body">
       Click the download button below. <br />
       <b-button
-        class="mx-auto my-3 android-btn"
+        class="mx-auto mt-3 android-btn"
         v-bind:href="download_url"
         target="_blank"
       >
@@ -17,7 +17,7 @@
       >
     </body>
 
-    <body class="mx-auto mt-3 text-center bg-body">
+    <body class="mx-auto mt-3 py-4 text-center bg-body">
       Click on <b>"Download anyway"</b> <br>
       <b-img
         src="@/assets/android_instructions/warning-harmfull.jpg"
@@ -38,7 +38,7 @@
     <hr />
 
     <div class="circle mx-auto my-4">2</div>
-    <body class="mx-auto mt-3 text-center bg-body">
+    <body class="mx-auto mt-3 py-4 text-center bg-body">
       After download has finished click <b>"Open"</b> <br>
       <b-img
         src="@/assets/android_instructions/open-snackbar.jpg"
@@ -47,7 +47,7 @@
       ></b-img>
     </body>
 
-    <body class="mx-auto mt-5 text-center bg-body">
+    <body class="mx-auto mt-5 py-4 text-center bg-body">
       If "...not allowed to install unknown apps.." is shown, click on
       <b>"Settings"</b>. Otherwise got to section
       <div class="circle-small ml-1">3</div> <br>
@@ -58,7 +58,7 @@
       ></b-img>
     </body>
 
-    <body class="mx-auto mt-5 text-center bg-body">
+    <body class="mx-auto mt-5 py-4 text-center bg-body">
       Toggle <b> "Allow apps from this source"</b> and return to the previous
       screen. <br>
       <b-img
@@ -69,7 +69,7 @@
     </body>
     <hr />
     <div class="circle mx-auto my-3">3</div>
-    <body class="mx-auto mt-3 text-center bg-body">
+    <body class="mx-auto mt-3 py-4 text-center bg-body">
       Click <b>"Install"</b>
       <br />
       <b-img
@@ -107,8 +107,8 @@ export default {
   border-radius: 20px;
 }
 .bg-body {
-  background-color: #f3f3f3;
-  border-radius: 20px;
+  background-color: #f3f3f36b;
+  border-radius: 10px;
   padding: 10px 20px;
   width: 90%;
 }
