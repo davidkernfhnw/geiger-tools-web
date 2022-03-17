@@ -1,2 +1,0 @@
-"use strict";(self["webpackChunkgeiger_tools_installation_webpage"]=self["webpackChunkgeiger_tools_installation_webpage"]||[]).push([[443],{5830:function(e,t,n){n.r(t),n.d(t,{default:function(){return r}});var a=function(){var e=this,t=e.$createElement;e._self._c;return e._m(0)},l=[function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("div",{staticClass:"about"},[n("h1",[e._v("This is an about page")])])}],s=n(1001),i={},u=(0,s.Z)(i,a,l,!1,null,null,null),r=u.exports}}]);
-//# sourceMappingURL=about.7672d7c8.js.map
