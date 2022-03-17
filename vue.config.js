@@ -1,9 +1,10 @@
 const { defineConfig } = require('@vue/cli-service')
 
 module.exports = defineConfig({
-  transpileDependencies: true,
+  filenameHashing: false,
+  //transpileDependencies: true,
   //publicPath: '/geiger-tools-web/'
-  publicPath: ''
+  publicPath: '/alpha-testing/'
 
 })
 

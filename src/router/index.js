@@ -26,9 +26,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  base: '',
+  base: 'alpha-testing',
   mode: 'history',
-  history: true,
   routes
 })
 
