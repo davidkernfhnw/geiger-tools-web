@@ -8,6 +8,9 @@
         fluid
         width="300rem"
       ></b-img>
+      <h3 class="align-left"> Demo <b>GEIGER Toolbox</b> and <b>MI Cyberrange</b>
+        (Android<span><mdicon name="android"  class="mx-1 color_android"/></span>)</h3>
+      <hr>
       <b-embed
       type="video"
       aspect="16by9"
@@ -16,6 +19,22 @@
       >
       <source src="@/assets/videos/toolbox-and-cyberrange.mp4" type="video/mp4">
       </b-embed>
+
+      <div style="margin-top: 80px"></div>
+
+      <h3 class="align-left"> Demo <b>GEIGER Toolbox</b> and <b>Chatbot</b>
+        (Android<span><mdicon name="android"  class="mx-1 color_android"/></span>)</h3>
+      <hr>
+      <b-embed
+      type="video"
+      aspect="16by9"
+      controls
+      allowfullscreen
+      >
+      <source src="@/assets/videos/toolbox-and-chatbot.mp4" type="video/mp4">
+      </b-embed>
+      <div style="margin-top: 80px"></div>
+
     </b-container>
   </div>
 </template>
