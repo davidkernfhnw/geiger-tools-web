@@ -4,6 +4,7 @@ import HomeView from '../views/HomeView.vue'
 import GetHelpView from '../views/GetHelpView.vue'
 import InstructionsView from '../views/InstructionsView.vue'
 
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -25,6 +26,8 @@ const routes = [
 ]
 
 const router = new VueRouter({
+  mode: 'history',
+  history: true,
   routes
 })
 
