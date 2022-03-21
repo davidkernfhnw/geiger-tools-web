@@ -60,14 +60,19 @@
         <b-collapse :id="'collapse-' + i" fluid class="mt-2">
           <b-tabs align="center" pills class="pt-3">
             <InstructionStepsAndroid
-              v-if="tools[i].android"
+              v-if="tools[i].android && !tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].download_url_android"
             />
             <InstructionStepsWindows
-              v-if="tools[i].microsoft"
+              v-if="tools[i].microsoft && !tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].download_url_microsoft"
+            />
+            <InstructionStepsWebApp 
+              v-if="tools[i].web"
+              :name="tools[i].name"
+              :download_url="tools[i].url_web"
             />
           </b-tabs>
           <b-button
@@ -88,11 +93,13 @@
 // @ is an alias to /src
 import InstructionStepsAndroid from "@/components/InstructionStepsAndroid.vue";
 import InstructionStepsWindows from "@/components/InstructionStepsMicrosoft.vue";
+import InstructionStepsWebApp from "@/components/InstructionStepsWebApp.vue"
 export default {
   name: "HomeView",
   components: {
     InstructionStepsAndroid,
     InstructionStepsWindows,
+    InstructionStepsWebApp,
   },
   data: () => ({
     tools: [
@@ -110,6 +117,8 @@ export default {
         download_url_apple: "",
         linux: false,
         download_url_linux: "",
+        web: false,
+        url_web: "",
       },
 
       {
@@ -127,6 +136,8 @@ export default {
         download_url_apple: "",
         linux: false,
         download_url_linux: "",
+        web: false,
+        url_web: "",
       },
 
       {
@@ -143,6 +154,8 @@ export default {
         download_url_apple: "",
         linux: false,
         download_url_linux: "",
+        web: false,
+        url_web: "",
       },
       {
         btnShow: true,
@@ -158,6 +171,24 @@ export default {
         download_url_apple: "",
         linux: false,
         download_url_linux: "",
+        web: false,
+        url_web: "",
+      },
+       {
+        btnShow: true,
+        name: "CSMG Online",
+        desc: "",
+        logo: "default-logo.png",
+        android: true,
+        download_url_android: "",
+        microsoft: true,
+        download_url_microsoft: "",
+        apple: true,
+        download_url_apple: "",
+        linux: false,
+        download_url_linux: "",
+        web: true,
+        url_web: "https://eu-online.csmg.awartex.com/admin",
       }
     ],
   }),
@@ -187,7 +218,7 @@ export default {
   color: rgb(59, 63, 61);
 }
 .card {
-  background-color: rgb(235, 235, 235);
+  background-color: rgb(255, 255, 255);
 }
 .collapse {
   background-color: white;

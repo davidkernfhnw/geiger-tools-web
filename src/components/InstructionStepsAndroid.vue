@@ -13,7 +13,7 @@
         v-bind:href="download_url"
         target="_blank"
       >
-        <mdicon name="android" class="mx-1" /> {{ name }}</b-button
+        <mdicon name="android" class="mx-1" /> <b>{{ name }}</b></b-button
       >
     </body>
 

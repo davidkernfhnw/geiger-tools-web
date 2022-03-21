@@ -30,7 +30,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color:black;
-  background-color: #F8F8F8;
+  background: rgb(206,237,207);
+  background: linear-gradient(180deg, rgba(206,237,207,1) 0%, rgba(255,255,255,1) 87%);
 }
 
 nav {
@@ -59,6 +60,9 @@ color: #01ABEB;
 }
 .color_geiger {
   color: #1FCD54;
+}
+.color_web_app {
+  color: #7778ac;
 }
 body {
   font-weight: 500 !important;
