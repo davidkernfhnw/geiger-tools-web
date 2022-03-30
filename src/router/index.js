@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
+
 import HomeView from '../views/HomeView.vue'
 import GetHelpView from '../views/GetHelpView.vue'
 import InstructionsView from '../views/InstructionsView.vue'
@@ -54,8 +56,8 @@ const routes = [
   },
 ]
 
-const router = new VueRouter({
-  base: 'alpha-testing',
+const router = createRouter({
+  //base: 'alpha-testing',
   mode: 'history',
   routes
 })
