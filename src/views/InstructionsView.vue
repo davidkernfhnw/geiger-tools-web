@@ -1,12 +1,6 @@
 <template>
     <b-container fluid="sm">
-      <b-img
-        class="mt-3 mb-5"
-        alt="Geiger-logo"
-        src="@/assets/logo-custom.png"
-        fluid
-        width="300rem"
-      ></b-img>
+     
       <h3 class="align-left"> Demo <b>GEIGER Toolbox</b> and <b>MI Cyberrange</b>
         (Android<span><mdicon name="android"  class="mx-1 color_android"/></span>)</h3>
       <hr>
