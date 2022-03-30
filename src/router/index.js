@@ -56,6 +56,7 @@ const routes = [
 
 const router = new VueRouter({
   //base: 'alpha-testing',
+  base: 'geiger-tools-web',
   mode: 'history',
   routes
 })
