@@ -1,38 +1,52 @@
 <template>
-  <b-tab>
-    <template slot="title">
-      <mdicon name="web" class="mx-1" />
-      <h6>Web App</h6>
-    </template>
+<div class="web-app">
+ <b-row align-v="center" align-h="center">
+      <img
+        :src="require('@/assets/logos/' + logo + '')"
+        alt="logo"
+        height="100px"
+        class="pr-3"
+      />
+      <h1>{{ name }}</h1>
+    </b-row>
     <hr />
     <div class="circle mx-auto my-4">1</div>
     <body class="mx-auto my-3 py-4 text-center bg-body">
       Click the button below to open the Web App. <br />
       <b-button
         class="mx-auto mt-3 web-btn"
-        v-bind:href="download_url"
+        v-bind:href="url_web"
         target="_blank"
+        size="lg"
       >
         <mdicon name="web" class="mx-1" /> <b>{{ name }}</b></b-button
       >
-       <p class="ml-3 mr-3 mt-3 text-info">
-         <br>
-       Best experience with <b-button variant="outline-dark" href="https://www.google.com/chrome/"  target="_blank"> <mdicon name="google-chrome"/> Chrome Browser</b-button>
-    </p>
+      <br>
+      <b-row align-v="center" align-h="center" class="mt-4">
+      
+      <small class="pr-2">
+       Best experience with
+       </small>
+        <b-button variant="outline-dark" href="https://www.google.com/chrome/"  target="_blank" size="sm"> <mdicon name="google-chrome"/> Chrome</b-button>
+    
+      </b-row>
+      
     </body>
-  </b-tab>
+</div>
 </template>
 
 <script>
 export default {
   name: "InstructionStepsWebApp",
   components: {},
-  props: {
-    download_url: String,
-    name: String,
-  },
+  
 
-  data: () => ({}),
+  data: () => ({
+        name: "CSMG Online",
+        desc: "",
+        logo: "default-logo.png",
+        url_web: "https://eu-online.csmg.awartex.com/admin",
+      }),
 };
 </script>
 
@@ -47,7 +61,7 @@ export default {
   border-radius: 20px;
 }
 .bg-body {
-  background-color: #f3f3f36b;
+  background-color: whitesmoke;
   border-radius: 10px;
   padding: 10px 20px;
   width: 90%;

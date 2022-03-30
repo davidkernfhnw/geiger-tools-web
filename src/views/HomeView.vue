@@ -59,21 +59,21 @@
         >
         <b-collapse :id="'collapse-' + i" fluid class="mt-2">
           <b-tabs align="center" pills class="pt-3">
-            <InstructionStepsAndroid
+             <!-- <InstructionStepsAndroid
               v-if="tools[i].android && !tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].download_url_android"
             />
-            <InstructionStepsWindows
+           <InstructionStepsWindows
               v-if="tools[i].microsoft && !tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].download_url_microsoft"
-            />
+            /> 
             <InstructionStepsWebApp 
               v-if="tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].url_web"
-            />
+            />-->
           </b-tabs>
           <b-button
             block
@@ -91,106 +91,17 @@
 
 <script>
 // @ is an alias to /src
-import InstructionStepsAndroid from "@/components/InstructionStepsAndroid.vue";
-import InstructionStepsWindows from "@/components/InstructionStepsMicrosoft.vue";
-import InstructionStepsWebApp from "@/components/InstructionStepsWebApp.vue"
+//import InstructionStepsAndroid from "@/components/InstructionStepsAndroid.vue";
+//import InstructionStepsWindows from "@/components/WindowsCyberrange.vue";
+//import InstructionStepsWebApp from "@/components/WebApp.vue"
 export default {
   name: "HomeView",
   components: {
-    InstructionStepsAndroid,
-    InstructionStepsWindows,
-    InstructionStepsWebApp,
+    //InstructionStepsAndroid,
+    //InstructionStepsWindows,
+   // InstructionStepsWebApp,
   },
   data: () => ({
-    tools: [
-      {
-        btnShow: true,
-        name: "GEIGER Toolbox",
-        desc: "",
-        logo: "toolbox-logo.png",
-        android: true,
-        download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/GEIGER-Toolbox.apk",
-        microsoft: false,
-        download_url_microsoft: "",
-        apple: false,
-        download_url_apple: "",
-        linux: false,
-        download_url_linux: "",
-        web: false,
-        url_web: "",
-      },
-
-      {
-        btnShow: true,
-        name: "MI Cyberrange",
-        desc: "",
-        logo: "default-logo.png",
-        android: true,
-        download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-cyberrange.apk",
-        microsoft: true,
-        download_url_microsoft:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads//microsoft/mi_cyberrange.exe",
-        apple: false,
-        download_url_apple: "",
-        linux: false,
-        download_url_linux: "",
-        web: false,
-        url_web: "",
-      },
-
-      {
-        btnShow: true,
-        name: "Chatbot",
-        desc: "",
-        logo: "default-logo.png",
-        android: true,
-        download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk",
-        microsoft: false,
-        download_url_microsoft: "",
-        apple: false,
-        download_url_apple: "",
-        linux: false,
-        download_url_linux: "",
-        web: false,
-        url_web: "",
-      },
-      {
-        btnShow: true,
-        name: "MI KSP Security",
-        desc: "",
-        logo: "default-logo.png",
-        android: true,
-        download_url_android:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-ksp-security.apk",
-        microsoft: false,
-        download_url_microsoft: "",
-        apple: false,
-        download_url_apple: "",
-        linux: false,
-        download_url_linux: "",
-        web: false,
-        url_web: "",
-      },
-       {
-        btnShow: true,
-        name: "CSMG Online",
-        desc: "",
-        logo: "default-logo.png",
-        android: true,
-        download_url_android: "",
-        microsoft: true,
-        download_url_microsoft: "",
-        apple: true,
-        download_url_apple: "",
-        linux: false,
-        download_url_linux: "",
-        web: true,
-        url_web: "https://eu-online.csmg.awartex.com/admin",
-      }
-    ],
   }),
   methods: {},
 };

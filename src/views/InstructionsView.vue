@@ -1,5 +1,4 @@
 <template>
-  <div class="home">
     <b-container fluid="sm">
       <b-img
         class="mt-3 mb-5"
@@ -34,9 +33,9 @@
       <source src="@/assets/videos/toolbox-and-chatbot.mp4" type="video/mp4">
       </b-embed>
       <div style="margin-top: 80px"></div>
+      <b-button class="back-btn" pill @click="$router.go(-1)">   <mdicon name="arrow-left"/> Go Back</b-button>
 
     </b-container>
-  </div>
 </template>
 
 <script>
@@ -44,6 +43,7 @@
 export default {
   name: "HomeView",
   components: {
+
   
   },
   data: () => ({
@@ -53,6 +53,15 @@ export default {
 </script>
 
 <style scoped>
+.back-btn {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #1fcd54;
+  border: none;
+  z-index: 1000;
+  
+}
 .card-body {
   padding: 0;
 }

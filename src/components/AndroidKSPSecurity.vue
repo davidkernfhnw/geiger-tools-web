@@ -1,9 +1,14 @@
 <template>
-  <b-tab>
-    <template slot="title">
-      <mdicon name="android" class="mx-1" />
-      <h6>Android</h6>
-    </template>
+  <div class="android-ksp-security">
+    <b-row align-v="center" align-h="center">
+      <img
+        :src="require('@/assets/logos/' + logo + '')"
+        alt="logo"
+        height="100px"
+        class="pr-3"
+      />
+      <h1>{{ name }}</h1>
+    </b-row>
     <hr />
     <div class="circle mx-auto my-4">1</div>
     <body class="mx-auto my-3 py-4 text-center bg-body">
@@ -80,19 +85,23 @@
     </body>
     <b-img src="@/assets/applause.png" width="100px" class="mt-3"></b-img>
     <h5 class="text-center mt-3">Successfully installed!</h5>
-  </b-tab>
+  </div>
 </template>
 
 <script>
 export default {
-  name: "InstructionStepsAndroid",
+  name: "AndroidKSPSecurity",
   components: {},
-  props: {
-    download_url: String,
-    name: String,
-  },
 
-  data: () => ({}),
+  data: () => ({
+        
+        name: "MI KSP Security",
+        desc: "",
+        logo: "default-logo.png",
+        download_url:
+          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-ksp-security.apk",
+  }
+  ),
 };
 </script>
 
@@ -107,7 +116,7 @@ export default {
   border-radius: 20px;
 }
 .bg-body {
-  background-color: #f3f3f36b;
+  background-color: whitesmoke;
   border-radius: 10px;
   padding: 10px 20px;
   width: 90%;
