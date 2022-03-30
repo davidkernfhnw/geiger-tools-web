@@ -1,10 +1,14 @@
 # geiger-tools-installation-webpage
 
 ## Deploy on Github Pages
-See [Tutorial deploy on gh-pages](https://learnvue.co/2020/09/how-to-deploy-your-vue-app-to-github-pages/#step-1-set-publicpath-in-vue-config-js-to-our-repository-name)
-
-## How to add direct download links
-Upload File into "downloads" folder at branch gh-pages. 
+```
+npm run build
+```
+Duplicate index.html and rename to 404.html (Handling Vue Router with a Custom 404 Page to go directly to a page)
+```
+git add dist && git commit -m 'adding dist subtree'
+git subtree push --prefix dist origin gh-pages
+```
 
 Example a tag
 ```
