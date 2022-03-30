@@ -4,7 +4,7 @@
       <img
         :src="require('@/assets/logos/' + logo + '')"
         alt="logo"
-        height="100px"
+        height="40px"
         class="pr-3"
       />
       <h1>{{ name }}</h1>

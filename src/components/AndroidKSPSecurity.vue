@@ -4,7 +4,7 @@
       <img
         :src="require('@/assets/logos/' + logo + '')"
         alt="logo"
-        height="100px"
+        height="40px"
         class="pr-3"
       />
       <h1>{{ name }}</h1>
@@ -97,7 +97,7 @@ export default {
         
         name: "MI KSP Security",
         desc: "",
-        logo: "default-logo.png",
+        logo: "montimage-logo.png",
         download_url:
           "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/mi-ksp-security.apk",
   }
