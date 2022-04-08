@@ -10,16 +10,14 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
          <b-nav-item-dropdown text="Tools" right>
-          <!-- add 'geiger-tools-web' if deployed to github page -->
-          <!-- remove 'geiger-tools-web' if testin on localhost-->
-          <b-dropdown-item href="geiger-tools-web/android/toolbox">GEIGER Toolbox for Android</b-dropdown-item>
-          <b-dropdown-item href="geiger-tools-web/android/chatbot">Chatbot for Android</b-dropdown-item>
-          <b-dropdown-item href="geiger-tools-web/android/ksp-security">KSP Security for Android</b-dropdown-item>
-          <b-dropdown-item href="geiger-tools-web/windows/cyberrange">Cyberrange for Windows</b-dropdown-item>
-          <b-dropdown-item href="geiger-tools-web/web/csmg">CSMG Online Web App</b-dropdown-item>
+          <b-dropdown-item to="/android/toolbox">GEIGER Toolbox for Android</b-dropdown-item>
+          <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item>
+          <b-dropdown-item to="/android/ksp-security">KSP Security for Android</b-dropdown-item>
+          <b-dropdown-item to="/windows/cyberrange">Cyberrange for Windows</b-dropdown-item>
+          <b-dropdown-item to="/web/csmg">CSMG Online Web App</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item href="/instructions">How to use</b-nav-item>
-        <b-nav-item href="/help">Get Help</b-nav-item>
+        <b-nav-item to="/instructions">How to use</b-nav-item>
+        <b-nav-item to="/help">Get Help</b-nav-item>
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
