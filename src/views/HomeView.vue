@@ -9,6 +9,25 @@
         width="300rem"
       ></b-img>
 
+<b-row class="m-4">
+      <b-card
+      v-for="tool in tools"
+      :key="tool"
+      border-variant="light"
+      style="width: 300px; height: 340px"
+      class="m-3 p-3 shadow"
+  >
+  <img :src="require('@/assets/logos/' + tool.logo + '')" :alt="tool.logo" width="150px" >
+
+
+  <b-card-title class="mt-2">
+    {{tool.name}}
+  </b-card-title>
+   
+
+    <b-button :to="tool.url" variant="primary" class="" style="position:absolute;  bottom: 20px; left: 20px; right: 20px"><b>Get Tool</b></b-button>
+  </b-card>
+  </b-row>
       <!-- <b-card
         v-for="(n, i) in tools.length"
         :key="i"
@@ -102,6 +121,15 @@ export default {
    // InstructionStepsWebApp,
   },
   data: () => ({
+    tools: [
+      {name: "GEIGER Toolbox for Android",  url: "/android/toolbox",      logo:"toolbox-logo.png"},
+      {name: "Chatbot for Android",         url: "/android/chatbot",      logo:"default-logo.png"},
+      {name: "KSP Security for Android",    url: "/android/ksp-security", logo:"montimage-logo-rect.png"},
+      {name: "Cyberrange for Android",      url: "/android/cyberrange",   logo:"montimage-logo-rect.png"},
+      {name: "CSMG Online Web App",         url: "/web/csmg",             logo:"default-logo.png"},
+
+
+    ]
   }),
   methods: {},
 };
