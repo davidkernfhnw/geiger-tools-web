@@ -3,11 +3,12 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import GetHelpView from '../views/GetHelpView.vue'
 import InstructionsView from '../views/InstructionsView.vue'
-import WindowsCyberrange from '../components/WindowsCyberrange.vue'
+//import WindowsCyberrange from '../components/WindowsCyberrange.vue'
 import WebCSMG from '../components/WebCSMG.vue'
 import AndroidToolbox from '../components/AndroidToolbox.vue'
 import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 import AndroidChatbot from '../components/AndroidChatbot.vue'
+import AndroidCyberrange from '../components/AndroidCyberrange.vue'
 
 Vue.use(VueRouter)
 
@@ -27,11 +28,11 @@ const routes = [
     name: 'instructions',
     component: InstructionsView
   },
- /*  {
+   /* {
     path: '/windows/cyberrange',
     name: 'cyberrange',
     component: WindowsCyberrange
-  }, */
+  }, */ 
   {
     path: '/web/csmg',
     name: 'CSMG Online',
@@ -51,6 +52,11 @@ const routes = [
     path: '/android/chatbot',
     name: 'Chatbot',
     component: AndroidChatbot
+  },
+  {
+    path: '/android/cyberrange',
+    name: 'Cyberrange',
+    component: AndroidCyberrange
   },
 ]
 

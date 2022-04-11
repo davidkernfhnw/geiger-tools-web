@@ -13,6 +13,7 @@
           <b-dropdown-item to="/android/toolbox">GEIGER Toolbox for Android</b-dropdown-item>
           <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item>
           <b-dropdown-item to="/android/ksp-security">KSP Security for Android</b-dropdown-item>
+           <b-dropdown-item to="/android/cyberrange">Cyberrange for Android</b-dropdown-item>
            <!-- <b-dropdown-item to="/windows/cyberrange">Cyberrange for Windows</b-dropdown-item> -->
           <b-dropdown-item to="/web/csmg">CSMG Online Web App</b-dropdown-item>
         </b-nav-item-dropdown>

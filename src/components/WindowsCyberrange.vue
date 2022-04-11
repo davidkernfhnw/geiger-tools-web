@@ -106,7 +106,7 @@ export default {
     desc: "",
     logo: "montimage-logo.png",
     download_url:
-      "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads//microsoft/mi_cyberrange.exe",
+      "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/microsoft/mi_cyberrange.exe",
   }),
 };
 </script>

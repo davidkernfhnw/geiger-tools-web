@@ -9,7 +9,7 @@
         width="300rem"
       ></b-img>
 
-      <b-card
+      <!-- <b-card
         v-for="(n, i) in tools.length"
         :key="i"
         class="mb-3 mx-auto br5"
@@ -59,7 +59,7 @@
         >
         <b-collapse :id="'collapse-' + i" fluid class="mt-2">
           <b-tabs align="center" pills class="pt-3">
-             <!-- <InstructionStepsAndroid
+              <InstructionStepsAndroid
               v-if="tools[i].android && !tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].download_url_android"
@@ -73,7 +73,7 @@
               v-if="tools[i].web"
               :name="tools[i].name"
               :download_url="tools[i].url_web"
-            />-->
+            />
           </b-tabs>
           <b-button
             block
@@ -84,7 +84,7 @@
             >Close</b-button
           >
         </b-collapse>
-      </b-card>
+      </b-card> -->
     </b-container>
   </div>
 </template>

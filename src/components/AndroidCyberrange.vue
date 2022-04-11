@@ -37,16 +37,19 @@ export default {
   
 
   data: () => ({
-        name: "GEIGER Toolbox",
+        name: "Cyberrange",
         desc: "",
-        logo: "toolbox-logo.png",
-        playstore_url: "https://play.google.com/store/apps/details?id=cybergeigertoolbox.geiger_toolbox",
+        logo: "montimage-logo.png",
+        playstore_url: "https://play.google.com/store/apps/details?id=com.montimage.cyberrange",
       }),
 };
 </script>
 
 <style scoped>
-
+.web-btn {
+  background-color: #7778ac;
+  border: none;
+}
 .img-size {
   margin-top: 20px;
   max-width: 280px;
