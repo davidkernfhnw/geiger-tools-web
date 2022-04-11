@@ -27,11 +27,11 @@ const routes = [
     name: 'instructions',
     component: InstructionsView
   },
-  {
+ /*  {
     path: '/windows/cyberrange',
     name: 'cyberrange',
     component: WindowsCyberrange
-  },
+  }, */
   {
     path: '/web/csmg',
     name: 'CSMG Online',
