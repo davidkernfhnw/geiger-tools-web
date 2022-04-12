@@ -98,7 +98,7 @@ export default {
         desc: "",
         logo: "default-logo.png",
         download_url:
-          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot-0.7.2.apk",
+          "https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/chatbot.apk",
 
   }
   ),
