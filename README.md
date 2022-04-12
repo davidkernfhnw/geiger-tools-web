@@ -12,7 +12,7 @@ git subtree push --prefix dist origin gh-pages
 
 Example a tag
 ```
- <a href="https://davidkernfhnw.github.io/geiger-tools-web/downloads/file_name.apk" target="_blank">Download APK</a>
+ <a href="https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/operating_system/file_name.apk" target="_blank">Download APK</a>
 ```
 
 ## Project setup
