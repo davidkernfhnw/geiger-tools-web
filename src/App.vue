@@ -11,7 +11,7 @@
       <b-navbar-nav>
          <b-nav-item-dropdown text="Tools" right>
           <b-dropdown-item to="/android/toolbox">GEIGER Toolbox for Android</b-dropdown-item>
-          <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item>
+          <!-- <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item> -->
           <b-dropdown-item to="/android/ksp-security">KSP Security for Android</b-dropdown-item>
           <b-dropdown-item to="/android/cyberrange">Cyberrange for Android</b-dropdown-item>
           <b-dropdown-item to="/android/testvirus">Test Virus for Android</b-dropdown-item>
@@ -23,14 +23,14 @@
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
-      <b-navbar-nav class="ml-auto">
+      <!-- <b-navbar-nav class="ml-auto">
         <b-nav-item-dropdown text="Language" right>
           <b-dropdown-item href="#">EN</b-dropdown-item>
           <b-dropdown-item href="#">DE</b-dropdown-item>
           <b-dropdown-item href="#">NL</b-dropdown-item>
           <b-dropdown-item href="#">RO</b-dropdown-item>
         </b-nav-item-dropdown>
-      </b-navbar-nav>
+      </b-navbar-nav>-->
     </b-collapse>
   </b-navbar>
 

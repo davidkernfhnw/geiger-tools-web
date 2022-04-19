@@ -95,7 +95,7 @@ export default {
 
   data: () => ({
         
-        name: "MI KSP Security",
+        name: "KSP Security",
         desc: "",
         logo: "montimage-logo.png",
         download_url:
