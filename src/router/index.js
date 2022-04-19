@@ -9,6 +9,7 @@ import AndroidToolbox from '../components/AndroidToolbox.vue'
 import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 import AndroidChatbot from '../components/AndroidChatbot.vue'
 import AndroidCyberrange from '../components/AndroidCyberrange.vue'
+import AndroidKSPTestVirus from '../components/AndroidKSPTestVirus.vue'
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/android/cyberrange',
     name: 'Cyberrange',
     component: AndroidCyberrange
+  },
+  {
+    path: '/android/testvirus',
+    name: 'TestVirus',
+    component: AndroidKSPTestVirus
   },
 ]
 
