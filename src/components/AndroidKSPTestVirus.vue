@@ -37,7 +37,7 @@ export default {
   
 
   data: () => ({
-        name: "Test Virus (KSP Security)",
+        name: "Test Virus",
         desc: "",
         logo: "test-virus-logo.webp",
         playstore_url: "https://play.google.com/store/apps/details?id=com.montimage.eicar_virus",
