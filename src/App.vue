@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" type="light" variant="light">
-    <b-navbar-brand to="/">
+    <b-navbar-brand :to="`/${$i18n.locale}/`">
               <img src="@/assets/logo-custom.png" alt="GEIGER Logo" height="50px">
     </b-navbar-brand>
 
@@ -10,27 +10,34 @@
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav>
          <b-nav-item-dropdown text="Tools" right>
-          <b-dropdown-item to="/android/toolbox">GEIGER Toolbox for Android</b-dropdown-item>
+          <b-dropdown-item :to="`/${$i18n.locale}/android/toolbox`">{{ $t('appbar.toolboxForAndroid') }}</b-dropdown-item>
           <!-- <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item> -->
-          <b-dropdown-item to="/android/ksp-security">KSP Security for Android</b-dropdown-item>
-          <b-dropdown-item to="/android/cyberrange">Cyberrange for Android</b-dropdown-item>
+          <b-dropdown-item :to="`/${$i18n.locale}/android/ksp-security`">{{ $t('appbar.kspSecurityForAndroid') }}</b-dropdown-item>
+          <b-dropdown-item :to="`/${$i18n.locale}/android/cyberrange`">{{ $t('appbar.cyberrangeForAndroid') }}</b-dropdown-item>
 <!--           <b-dropdown-item to="/android/testvirus">Test Virus for Android</b-dropdown-item>
  -->           <!-- <b-dropdown-item to="/windows/cyberrange">Cyberrange for Windows</b-dropdown-item> -->
-          <b-dropdown-item to="/web/csmg">CSMG Online Web App</b-dropdown-item>
+          <b-dropdown-item :to="`/${$i18n.locale}/web/csmg`">{{ $t('appbar.csmgForWeb') }}p</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item to="/instructions">How to use</b-nav-item>
+        <b-nav-item :to="`/${$i18n.locale}/instructions`">{{ $t('appbar.howToUse') }}</b-nav-item>
        <!-- <b-nav-item to="/help">Get Help</b-nav-item>  -->
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
-      <!-- <b-navbar-nav class="ml-auto">
-        <b-nav-item-dropdown text="Language" right>
-          <b-dropdown-item href="#">EN</b-dropdown-item>
-          <b-dropdown-item href="#">DE</b-dropdown-item>
-          <b-dropdown-item href="#">NL</b-dropdown-item>
-          <b-dropdown-item href="#">RO</b-dropdown-item>
-        </b-nav-item-dropdown>
-      </b-navbar-nav>-->
+  
+       <b-navbar-nav class="ml-auto">
+         <div class="pr-2">{{ $t('appbar.language') }}
+
+         </div>
+       <template>
+        <div class="locale-changer">
+          <select v-model="$i18n.locale">
+            <option v-for="(lang, i) in langs" :key="`Lang${i}`" :value="lang">
+            {{ lang }}
+            </option>
+          </select>
+        </div>
+      </template>
+      </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 
@@ -66,6 +73,19 @@ export default {
   components: {
     BottomFooter,
   },
+  data: () => ({
+    langs: ['en', 'de', 'ne', 'ro'],
+    methods: {
+
+      switchLocale(locale){
+        if(this.$root.$i18n.locale != locale){
+          this.$root.$i18n.locale = locale
+          console.log(this.$root.$i18n.locale);
+        }
+
+      }
+    },
+  })
 };
 </script>
 

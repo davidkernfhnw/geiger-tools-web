@@ -11,22 +11,39 @@ import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 //import AndroidChatbot from '../components/AndroidChatbot.vue'
 import AndroidCyberrange from '../components/AndroidCyberrange.vue'
 import AndroidKSPTestVirus from '../components/AndroidKSPTestVirus.vue'
+import i18n from '@/i18n'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
+    redirect: `/${i18n.locale}` 
+  },
+  {
+    path: '/android/ksp-security',
+    redirect: `/${i18n.locale}/android/ksp-security` 
+  },
+{
+    path: '/:lang',
+    component: {
+      render(c) {
+        return c('router-view')
+      },
+    },
+    children: [
+  {
+    path: '/',
     name: 'home',
     component: HomeView
   },
   {
-    path: '/help',
+    path: 'help',
     name: 'gethelp',
     component: GetHelpView
   },
   {
-    path: '/instructions',
+    path: 'instructions',
     name: 'instructions',
     component: InstructionsView
   },
@@ -36,40 +53,42 @@ const routes = [
    component: WindowsCyberrange
  }, */
   {
-    path: '/web/csmg',
+    path: 'web/csmg',
     name: 'CSMG Online',
     component: WebCSMG
   },
   {
-    path: '/android/toolbox',
+    path: 'android/toolbox',
     name: 'GEIGER Toolbox',
     component: AndroidToolbox
   },
-/*   {
-    path: '/android/ksp-security',
+  /* {
+    path: 'android/ksp-security',
     name: 'KSP Security',
     component: AndroidKSPSecurityAPK
   }, */
   {
-    path: '/android/ksp-security',
+    path: 'android/ksp-security',
     name: 'KSP Security',
     component: AndroidKSPSecurity
   },
   /* {
-    path: '/android/chatbot',
+    path: 'android/chatbot',
     name: 'Chatbot',
     component: AndroidChatbot
   }, */
   {
-    path: '/android/cyberrange',
+    path: 'android/cyberrange',
     name: 'Cyberrange',
     component: AndroidCyberrange
   },
   {
-    path: '/android/testvirus',
+    path: 'android/testvirus',
     name: 'TestVirus',
     component: AndroidKSPTestVirus
   },
+    ]
+}
 ]
 
 const router = new VueRouter({
