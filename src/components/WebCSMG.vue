@@ -44,7 +44,7 @@ export default {
   data: () => ({
         name: "CSMG Online",
         desc: "",
-        logo: "default-logo.png",
+        logo: "csmg-logo.png",
         url_web: "https://eu-online.csmg.awartex.com/admin",
       }),
 };

@@ -18,13 +18,13 @@
  -->           <!-- <b-dropdown-item to="/windows/cyberrange">Cyberrange for Windows</b-dropdown-item> -->
           <b-dropdown-item :to="`/${$i18n.locale}/web/csmg`">{{ $t('appbar.csmgForWeb') }}p</b-dropdown-item>
         </b-nav-item-dropdown>
-        <b-nav-item :to="`/${$i18n.locale}/instructions`">{{ $t('appbar.howToUse') }}</b-nav-item>
-       <!-- <b-nav-item to="/help">Get Help</b-nav-item>  -->
+<!--         <b-nav-item :to="`/${$i18n.locale}/instructions`">{{ $t('appbar.howToUse') }}</b-nav-item>
+ -->       <!-- <b-nav-item to="/help">Get Help</b-nav-item>  -->
       </b-navbar-nav>
 
       <!-- Right aligned nav items -->
   
-       <b-navbar-nav class="ml-auto">
+       <!-- <b-navbar-nav class="ml-auto">
          <div class="pr-2">{{ $t('appbar.language') }}
 
          </div>
@@ -37,7 +37,7 @@
           </select>
         </div>
       </template>
-      </b-navbar-nav>
+      </b-navbar-nav> -->
     </b-collapse>
   </b-navbar>
 

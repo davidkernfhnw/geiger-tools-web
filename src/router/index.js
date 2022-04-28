@@ -10,7 +10,7 @@ import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 //import AndroidKSPSecurityAPK from '../components/AndroidKSPSecurityAPK.vue'
 //import AndroidChatbot from '../components/AndroidChatbot.vue'
 import AndroidCyberrange from '../components/AndroidCyberrange.vue'
-import AndroidKSPTestVirus from '../components/AndroidKSPTestVirus.vue'
+//import AndroidKSPTestVirus from '../components/AndroidKSPTestVirus.vue'
 import i18n from '@/i18n'
 
 Vue.use(VueRouter)
@@ -24,6 +24,15 @@ const routes = [
     path: '/android/ksp-security',
     redirect: `/${i18n.locale}/android/ksp-security` 
   },
+  {
+    path: 'android/toolbox',
+    redirect: `/${i18n.locale}/android/toolbox` 
+  },
+  {
+    path: 'android/cyberrange',
+    redirect: `/${i18n.locale}/android/cyberrange` 
+  },
+  
 {
     path: '/:lang',
     component: {
@@ -82,11 +91,11 @@ const routes = [
     name: 'Cyberrange',
     component: AndroidCyberrange
   },
-  {
+  /* {
     path: 'android/testvirus',
     name: 'TestVirus',
     component: AndroidKSPTestVirus
-  },
+  }, */
     ]
 }
 ]
