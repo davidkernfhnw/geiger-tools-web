@@ -50,7 +50,7 @@ export default {
       {name: "GEIGER Toolbox for Android",  url: "/android/toolbox",      logo:"toolbox-logo.png"},
       //{name: "Chatbot for Android",         url: "/android/chatbot",      logo:"default-logo.png"},
       //{name: "KSP Security for Android",    url: "/android/ksp-security", logo:"montimage-logo-rect.png"},
-      {name: "KSP Security for Android",    url: "/android/ksp-security", logo:"ksp-security-logo.webp"},
+      {name: "Mobile Security Scanner for Android",    url: "/android/ksp-security", logo:"ksp-security-logo.webp"},
       {name: "Cyberrange for Android",      url: "/android/cyberrange",   logo:"montimage-logo-rect.png"},
       {name: "CSMG Online Web App",         url: "/web/csmg",             logo:"csmg-logo.png"},
      // {name: "Test Virus for Android",    url: "/android/testvirus",    logo:"test-virus-logo.webp"}

@@ -40,7 +40,7 @@
     <hr />
     <div class="circle mx-auto my-4">1</div>
     <body class="mx-auto my-3 py-4 text-center bg-body">
-      In order to test the malware detecting function of the KSP Security Tool please Install the {{name2}} Application from the Google Play Store <br />
+      In order to test the malware detecting function of the Mobile Security Scanner Tool please Install the {{name2}} Application from the Google Play Store <br />
         <small  class="text-warning">
        Don't worry, we won't install any malicious files on your device! This is only a test virus and will not damage your device. After uninstalling the app, the test virus will be deleted too.
         
@@ -73,7 +73,7 @@ export default {
   
 
   data: () => ({
-        name: "KSP Security",
+        name: "Mobile Security Scanner",
         desc: "",
         logo: "ksp-security-logo.webp",
         playstore_url: "https://play.google.com/store/apps/details?id=com.montimage.mi_ksp_security",

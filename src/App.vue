@@ -109,6 +109,13 @@ nav a {
   font-weight: bold;
   color: #2c3e50;
 }
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: 0;
+    width: 20em;
+}
+}
 
 nav a.router-link-exact-active {
   color: #42b983;
