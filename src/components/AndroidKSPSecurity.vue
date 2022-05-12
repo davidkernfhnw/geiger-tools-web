@@ -7,7 +7,7 @@
         height="40px"
         class="pr-3"
       />
-      <h1>{{ name }}</h1>
+      <h1 class="m-0">{{ name }}</h1>
     </b-row>
     <hr />
     <div class="circle mx-auto my-4">1</div>
@@ -119,5 +119,10 @@ export default {
   text-align: center;
   font: 15px Arial, sans-serif;
   display: inline-block;
+}
+@media (max-width: 560px){
+  h1 {
+  font-size: 1.5rem;
+  }
 }
 </style>
