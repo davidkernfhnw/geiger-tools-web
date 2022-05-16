@@ -14,8 +14,8 @@
           <!-- <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item> -->
           <b-dropdown-item :to="`/${$i18n.locale}/android/ksp-security`">{{ $t('appbar.kspSecurityForAndroid') }}</b-dropdown-item>
           <b-dropdown-item :to="`/${$i18n.locale}/android/cyberrange`">{{ $t('appbar.cyberrangeForAndroid') }}</b-dropdown-item>
-<!--           <b-dropdown-item to="/android/testvirus">Test Virus for Android</b-dropdown-item>
- -->           <!-- <b-dropdown-item to="/windows/cyberrange">Cyberrange for Windows</b-dropdown-item> -->
+          <b-dropdown-item :to="`/${$i18n.locale}/windows/cyberrange`">{{ $t('appbar.cyberrangeForWindows') }}</b-dropdown-item>
+<!--      <b-dropdown-item to="/android/testvirus">Test Virus for Android</b-dropdown-item> -->     
           <b-dropdown-item :to="`/${$i18n.locale}/web/csmg`">{{ $t('appbar.csmgForWeb') }}p</b-dropdown-item>
         </b-nav-item-dropdown>
 <!--         <b-nav-item :to="`/${$i18n.locale}/instructions`">{{ $t('appbar.howToUse') }}</b-nav-item>

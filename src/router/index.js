@@ -10,6 +10,7 @@ import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 //import AndroidKSPSecurityAPK from '../components/AndroidKSPSecurityAPK.vue'
 //import AndroidChatbot from '../components/AndroidChatbot.vue'
 import AndroidCyberrange from '../components/AndroidCyberrange.vue'
+import WindowsCyberrange from '../components/WindowsCyberrange.vue'
 //import AndroidKSPTestVirus from '../components/AndroidKSPTestVirus.vue'
 import i18n from '@/i18n'
 
@@ -31,6 +32,10 @@ const routes = [
   {
     path: 'android/cyberrange',
     redirect: `/${i18n.locale}/android/cyberrange` 
+  },
+  {
+    path: 'windows/cyberrange',
+    redirect: `/${i18n.locale}/windows/cyberrange` 
   },
   
 {
@@ -90,6 +95,11 @@ const routes = [
     path: 'android/cyberrange',
     name: 'Cyberrange',
     component: AndroidCyberrange
+  }, 
+  {
+    path: 'windows/cyberrange',
+    name: 'Win_Cyberrange',
+    component: WindowsCyberrange
   },
   /* {
     path: 'android/testvirus',

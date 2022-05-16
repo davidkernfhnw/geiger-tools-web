@@ -15,7 +15,7 @@
       Click the download button below. <br />
       <b-button
         class="mx-auto mt-3 win-btn"
-        v-bind:href="download_url_microsoft"
+        v-bind:href="download_url"
         target="_blank"
         size="lg"
       >

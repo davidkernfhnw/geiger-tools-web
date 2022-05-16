@@ -52,6 +52,7 @@ export default {
       //{name: "KSP Security for Android",    url: "/android/ksp-security", logo:"montimage-logo-rect.png"},
       {name: "Mobile Security Scanner for Android",    url: "/android/ksp-security", logo:"ksp-security-logo.webp"},
       {name: "Cyberrange for Android",      url: "/android/cyberrange",   logo:"montimage-logo-rect.png"},
+      {name: "Cyberrange for Windows",      url: "/windows/cyberrange",   logo:"montimage-logo-rect.png"},
       {name: "CSMG Online Web App",         url: "/web/csmg",             logo:"csmg-logo.png"},
      // {name: "Test Virus for Android",    url: "/android/testvirus",    logo:"test-virus-logo.webp"}
 
