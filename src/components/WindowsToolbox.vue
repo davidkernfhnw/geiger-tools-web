@@ -12,16 +12,17 @@
     <hr />
     <div class="circle mx-auto my-4">1</div>
     <body class="mx-auto my-3 py-4 text-center bg-body">
-      Download {{name}} from the Google Play Store <br />
+      Download {{name}} from Windows Store <br />
       <b-button
         class="p-0 mt-3"
-        v-bind:href="playstore_url"
+        v-bind:href="windows_store_url"
         target="_blank"
         
       >
       <img
-       :src="require('@/assets/google-play-btn.png')"
+       :src="require('@/assets/windows-store-btn.png')"
        height="50px"
+       class="win-btn"
       >
       </b-button>
     
@@ -32,7 +33,7 @@
 
 <script>
 export default {
-  name: "InstructionStepsWebApp",
+  name: "WindowsToolbox",
   components: {},
   
 
@@ -40,12 +41,15 @@ export default {
         name: "GEIGER Toolbox",
         desc: "",
         logo: "toolbox-logo.png",
-        playstore_url: "https://play.google.com/store/apps/details?id=cybergeigertoolbox.geiger_toolbox",
+        windows_store_url: "https://www.microsoft.com/store/apps/9MZ8QDJZ8ZGQ",
       }),
 };
 </script>
 
 <style scoped>
+.win-btn{
+  background: #008A00;
+}
 
 .img-size {
   margin-top: 20px;

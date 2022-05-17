@@ -11,6 +11,7 @@
       <b-navbar-nav>
          <b-nav-item-dropdown text="Tools" right>
           <b-dropdown-item :to="`/${$i18n.locale}/android/toolbox`">{{ $t('appbar.toolboxForAndroid') }}</b-dropdown-item>
+          <b-dropdown-item :to="`/${$i18n.locale}/windows/toolbox`">{{ $t('appbar.toolboxForWindows') }}</b-dropdown-item>
           <!-- <b-dropdown-item to="/android/chatbot">Chatbot for Android</b-dropdown-item> -->
           <b-dropdown-item :to="`/${$i18n.locale}/android/ksp-security`">{{ $t('appbar.kspSecurityForAndroid') }}</b-dropdown-item>
           <b-dropdown-item :to="`/${$i18n.locale}/android/cyberrange`">{{ $t('appbar.cyberrangeForAndroid') }}</b-dropdown-item>

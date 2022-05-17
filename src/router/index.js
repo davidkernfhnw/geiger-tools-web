@@ -6,6 +6,7 @@ import InstructionsView from '../views/InstructionsView.vue'
 //import WindowsCyberrange from '../components/WindowsCyberrange.vue'
 import WebCSMG from '../components/WebCSMG.vue'
 import AndroidToolbox from '../components/AndroidToolbox.vue'
+import WindowsToolbox from '../components/WindowsToolbox.vue'
 import AndroidKSPSecurity from '../components/AndroidKSPSecurity.vue'
 //import AndroidKSPSecurityAPK from '../components/AndroidKSPSecurityAPK.vue'
 //import AndroidChatbot from '../components/AndroidChatbot.vue'
@@ -36,6 +37,10 @@ const routes = [
   {
     path: 'windows/cyberrange',
     redirect: `/${i18n.locale}/windows/cyberrange` 
+  },
+  {
+    path: 'windows/toolbox',
+    redirect: `/${i18n.locale}/windows/toolbox` 
   },
   
 {
@@ -75,6 +80,11 @@ const routes = [
     path: 'android/toolbox',
     name: 'GEIGER Toolbox',
     component: AndroidToolbox
+  },
+  {
+    path: 'windows/toolbox',
+    name: 'Windows GEIGER Toolbox',
+    component: WindowsToolbox
   },
   /* {
     path: 'android/ksp-security',

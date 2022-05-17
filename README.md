@@ -11,7 +11,7 @@ git add dist && git commit -m 'adding dist subtree' && git subtree push --prefix
 
 Example a tag
 ```
- <a href="https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/operating_system/file_name.apk" target="_blank">Download APK</a>
+ <a href="https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/operating_system/file_name.apk" target="_blank">Download APK</a> 
 ```
 
 ## Project setup
@@ -36,3 +36,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+

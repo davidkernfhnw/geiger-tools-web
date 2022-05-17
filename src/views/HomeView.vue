@@ -48,6 +48,7 @@ export default {
   data: () => ({
     tools: [
       {name: "GEIGER Toolbox for Android",  url: "/android/toolbox",      logo:"toolbox-logo.png"},
+      {name: "GEIGER Toolbox for Windows",  url: "/windows/toolbox",      logo:"toolbox-logo.png"},
       //{name: "Chatbot for Android",         url: "/android/chatbot",      logo:"default-logo.png"},
       //{name: "KSP Security for Android",    url: "/android/ksp-security", logo:"montimage-logo-rect.png"},
       {name: "Mobile Security Scanner for Android",    url: "/android/ksp-security", logo:"ksp-security-logo.webp"},

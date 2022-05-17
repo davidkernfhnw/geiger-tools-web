@@ -1,8 +1,10 @@
 {
     "appbar": {
         "toolboxForAndroid": "GEIGER Toolbox für Android",
+        "toolboxForWindows": "GEIGER Toolbox für Windows",
         "kspSecurityForAndroid": "Mobile Security Scanner für Android",
         "cyberrangeForAndroid": "Cyberrange für Android",
+        "cyberrangeForWindows": "Cyberrange für Windows",
         "csmgForWeb": "CSMG Online Web App",
         "howToUse": "Demos",
         "language": "Sprache"
