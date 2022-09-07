@@ -97,7 +97,7 @@ export default {
     name: "GEIGER Toolbox APK",
     desc: "",
     logo: "toolbox-logo.png",
-    download_url:"https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/GEIGER-Toolbox.apk",
+    download_url:"https://github.com/davidkernfhnw/geiger-tools-web/raw/master/downloads/android/GEIGER-Toolbox.apk.zip",
   }),
 };
 </script>

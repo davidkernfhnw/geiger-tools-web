@@ -8,7 +8,8 @@
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
     <b-collapse id="nav-collapse" is-nav>
-      <b-navbar-nav>
+      <b-navbar-nav> 
+        
          <b-nav-item-dropdown text="Tools" right>
           <b-dropdown-item :to="`/${$i18n.locale}/android/toolbox`">{{ $t('appbar.toolboxForAndroid') }}</b-dropdown-item>
           <b-dropdown-item :to="`/${$i18n.locale}/windows/toolbox`">{{ $t('appbar.toolboxForWindows') }}</b-dropdown-item>
